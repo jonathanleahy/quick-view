@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu App - Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">Menu System Dev Tools</h1>
+        <p class="text-gray-600 mb-6">Click the button below to open the menu interface</p>
+        <button id="devButton" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105">
+            🚀 Launch Menu Browser
+        </button>
+        <p class="text-sm text-gray-500 mt-4">For development use only</p>
+    </div>
+
+    <script>
+        document.getElementById('devButton').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/api/launch');
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    // Show success feedback
+                    const button = document.getElementById('devButton');
+                    const originalText = button.innerText;
+                    button.innerText = '✓ Browser Launched!';
+                    button.classList.add('bg-green-500', 'hover:bg-green-600');
+                    button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                    
+                    // Reset button after 2 seconds
+                    setTimeout(() => {
+                        button.innerText = originalText;
+                        button.classList.remove('bg-green-500', 'hover:bg-green-600');
+                        button.classList.add('bg-blue-500', 'hover:bg-blue-600');
+                    }, 2000);
+                }
+            } catch (error) {
+                console.error('Error launching browser:', error);
+                alert('Failed to launch browser. Please check console.');
+            }
+        });
+    </script>
+</body>
+</html>

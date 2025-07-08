@@ -1,0 +1,281 @@
+{
+  "items": [
+    {
+      "id": "file",
+      "title": "File",
+      "type": "menu",
+      "hotkey": "Alt+F",
+      "children": [
+        {
+          "id": "new",
+          "title": "New",
+          "type": "menu",
+          "children": [
+            {
+              "id": "new-doc",
+              "title": "Document",
+              "type": "leaf",
+              "icon": "📄",
+              "url": "https://docs.google.com/document/create",
+              "hotkey": "Ctrl+N"
+            },
+            {
+              "id": "new-sheet",
+              "title": "Spreadsheet",
+              "type": "leaf",
+              "icon": "📊",
+              "url": "https://sheets.google.com/create"
+            },
+            {
+              "id": "new-slide",
+              "title": "Presentation",
+              "type": "leaf",
+              "icon": "📽️",
+              "url": "https://slides.google.com/create"
+            }
+          ]
+        },
+        {
+          "id": "open",
+          "title": "Open",
+          "type": "leaf",
+          "icon": "📂",
+          "url": "https://drive.google.com",
+          "hotkey": "Ctrl+O"
+        },
+        {
+          "id": "recent",
+          "title": "Recent Files",
+          "type": "cards",
+          "children": [
+            {
+              "id": "recent-1",
+              "title": "Project Proposal.docx",
+              "type": "leaf",
+              "icon": "📄",
+              "url": "https://docs.google.com"
+            },
+            {
+              "id": "recent-2",
+              "title": "Budget 2024.xlsx",
+              "type": "leaf",
+              "icon": "📊",
+              "url": "https://sheets.google.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apps",
+      "title": "Applications",
+      "type": "cards",
+      "hotkey": "Alt+A",
+      "children": [
+        {
+          "id": "communication-panel",
+          "type": "panel",
+          "layout": "2x1",
+          "title": "Communication",
+          "children": [
+            {
+              "id": "email",
+              "title": "Email",
+              "type": "leaf",
+              "icon": "📧",
+              "url": "https://gmail.com",
+              "hotkey": "Ctrl+E"
+            },
+            {
+              "id": "slack",
+              "title": "Slack",
+              "type": "leaf",
+              "icon": "💬",
+              "url": "https://slack.com",
+              "hotkey": "Ctrl+S"
+            }
+          ]
+        },
+        {
+          "id": "browser",
+          "title": "Web Browser",
+          "type": "leaf",
+          "icon": "🌐",
+          "url": "https://google.com",
+          "hotkey": "Ctrl+B"
+        },
+        {
+          "id": "calendar",
+          "title": "Calendar",
+          "type": "leaf",
+          "icon": "📅",
+          "url": "https://calendar.google.com",
+          "hotkey": "Ctrl+K"
+        }
+      ]
+    },
+    {
+      "id": "dev-tools",
+      "title": "Development",
+      "type": "menu",
+      "hotkey": "Alt+D",
+      "children": [
+        {
+          "id": "code-editors",
+          "title": "Code Editors",
+          "type": "cards",
+          "children": [
+            {
+              "id": "vscode",
+              "title": "VS Code",
+              "type": "leaf",
+              "icon": "💻",
+              "url": "https://vscode.dev",
+              "description": "Browser-based code editor with full IntelliSense and Git integration"
+            },
+            {
+              "id": "github",
+              "title": "GitHub",
+              "type": "leaf",
+              "icon": "🐙",
+              "url": "https://github.com",
+              "hotkey": "Ctrl+G",
+              "description": "Where the world builds software"
+            },
+            {
+              "id": "codepen",
+              "title": "CodePen",
+              "type": "leaf",
+              "icon": "🖊️",
+              "url": "https://codepen.io"
+            }
+          ]
+        },
+        {
+          "id": "databases",
+          "title": "Databases",
+          "type": "cards",
+          "children": [
+            {
+              "id": "mongodb",
+              "title": "MongoDB Atlas",
+              "type": "leaf",
+              "icon": "🍃",
+              "url": "https://cloud.mongodb.com"
+            },
+            {
+              "id": "firebase",
+              "title": "Firebase Console",
+              "type": "leaf",
+              "icon": "🔥",
+              "url": "https://console.firebase.google.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "title": "Productivity",
+      "type": "cards",
+      "hotkey": "Alt+P",
+      "children": [
+        {
+          "id": "workspace-panel",
+          "type": "panel",
+          "layout": "2x2",
+          "title": "Workspace Tools",
+          "children": [
+            {
+              "id": "notion",
+              "title": "Notion",
+              "type": "leaf",
+              "icon": "📝",
+              "url": "https://notion.so",
+              "description": "All-in-one workspace"
+            },
+            {
+              "id": "trello",
+              "title": "Trello",
+              "type": "leaf",
+              "icon": "📋",
+              "url": "https://trello.com",
+              "description": "Visual project management"
+            },
+            {
+              "id": "todoist",
+              "title": "Todoist",
+              "type": "leaf",
+              "icon": "✅",
+              "url": "https://todoist.com"
+            },
+            {
+              "id": "pomodoro",
+              "title": "Pomodoro Timer",
+              "type": "leaf",
+              "icon": "⏰",
+              "url": "https://pomofocus.io"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "title": "Media & Entertainment",
+      "type": "menu",
+      "children": [
+        {
+          "id": "streaming",
+          "title": "Streaming",
+          "type": "cards",
+          "children": [
+            {
+              "id": "youtube",
+              "title": "YouTube",
+              "type": "leaf",
+              "icon": "📺",
+              "url": "https://youtube.com",
+              "hotkey": "Ctrl+Y"
+            },
+            {
+              "id": "spotify",
+              "title": "Spotify",
+              "type": "leaf",
+              "icon": "🎵",
+              "url": "https://open.spotify.com"
+            },
+            {
+              "id": "netflix",
+              "title": "Netflix",
+              "type": "leaf",
+              "icon": "🎬",
+              "url": "https://netflix.com"
+            }
+          ]
+        },
+        {
+          "id": "news",
+          "title": "News & Reading",
+          "type": "cards",
+          "children": [
+            {
+              "id": "reddit",
+              "title": "Reddit",
+              "type": "leaf",
+              "icon": "🤖",
+              "url": "https://reddit.com"
+            },
+            {
+              "id": "hackernews",
+              "title": "Hacker News",
+              "type": "leaf",
+              "icon": "📰",
+              "url": "https://news.ycombinator.com"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
